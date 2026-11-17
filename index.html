@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATTERY Monitor</title>
+    <link rel="stylesheet" href="counter app.css">
+    <script src="https://kit.fontawesome.com/bb2bd826f1.js"></script>
+</head>
+<body>
+
+    <h1>Battery Monitor System</h1>
+    <p>A simple interactive battery monitoring application</p>
+
+    <!-- Battery Display -->
+    <div class="battery-box">
+        <div id="batteryFill" class="battery-fill">67%</div>
+    </div>
+    <p class="battery-tip">Battery Tip</p>
+
+    <!-- Status -->
+    <p>STATUS: <span id="statusText">Good</span></p>
+    <p>BATTERY HEALTH: <span id="healthText">Excellent</span></p>
+
+    <!-- Buttons -->
+    <button onclick="chargeBattery()"><i class="fa-solid fa-charging-station"></i>CHARGE</button>
+    <button onclick="drainBattery()"><i class="fa-solid fa-droplet"></i>DRAIN</button>
+    <button onclick="resetBattery()"><i class="fa-solid fa-rotate"></i>RESET</button>
+
+    <hr>
+
+    <!-- Info -->
+    <p>Battery Level: <span id="levelText">67%</span></p>
+    <p>Status: <span id="statusText2">Good</span></p>
+    <p>Battery Health: <span id="healthText2">Excellent</span></p>
+
+    <hr>
+
+    <!-- Guides -->
+    <h3>Battery Status Guide</h3>
+    <ul>
+        <li>0% - Empty</li>
+        <li>1% - 20% - Critical</li>
+        <li>21% - 50% - Low Battery</li>
+        <li>51% - 80% - Good</li>
+        <li>81% - 100% - Fully Charged</li>
+    </ul>
+
+    <h3>Battery Health Guide</h3>
+    <ul>
+        <li>0% - 20% - Poor</li>
+        <li>21% - 50% - Fair</li>
+        <li>51% - 80% - Good</li>
+        <li>81% - 100% - Excellent</li>
+    </ul>
+
+<script src="script.js"></script>
+</body>
+</html>
